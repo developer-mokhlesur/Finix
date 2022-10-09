@@ -1,7 +1,7 @@
 body,p,span{
     font-family: 'Roboto', sans-serif;
 }
-h1,h2,h3,h4,h5,h6,a{
+h1,h2,h3,h4,h5,h6,a,strong{
     font-family: 'Rubik', sans-serif;
 }
 /* Header CSS Start */
@@ -265,4 +265,206 @@ a.default-btn:hover::after{
 }
 /* About CSS End */
 /* About CSS End */
+.choose {
+    background: #f9fafb;
+    padding: 100px 0;
+}
+.choose span{
+    color: #e73c3e;
+    font-size: 16px;
+}
+.choose h1{
+    font-size: 36px;
+    font-weight: 500;
+    color: #111111;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+.choose p {
+    line-height: 1.8;
+    font-size: 16px;
+    color: #606060;
+    font-weight: 400;
+}
+.choose-text{
+    position: relative;
+}
+.choose .play-animation {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    display: inline-block;
+    font-size: 50px;
+    line-height: 80px;
+    text-align: center;
+    color: #e73c3e;
+    border-radius: 50%;
+    position: absolute;
+    top: 77%;
+    left: 46%;
+    transition: 0.5s;
+}
+.choose .play-animation:hover{
+    background: #e73c3e;
+    color: #fff;
+}
+.choose .play-animation ::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:80px;
+    width: 80px;
+    background: #e73c3e;
+    border-radius: 50%;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: mukul 2s linear infinite;
+}
+@keyframes mukul{
+    0%{
+        transform: scale(1);
+        opacity: .7;
+    }
+    50%{
+        transform: scale(1.4);
+        opacity: .6;
+    }
+    75%{
+        transform: scale(1.6);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+.item-box {
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+.item-box span {
+    color: #e73c3e;
+    font-size: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    display: inline-block;
+    line-height: 90px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.item-box::after {
+    content: "";
+    position: absolute;
+    top: -360px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #fdebeb;
+    width: 90%;
+    height: 65%;
+    border-radius: 50%;
+    z-index: -1;
+}
+.item-box h5 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.item-box p{
+    color: #606060;
+    line-height: 1.8;
+    font-size: 16px;
+    font-weight: 400;
+}
+.item-box:hover span{
+    background: #e73c3e;
+    color: #fff;
+}
+.mt{
+    margin-top: -30px;
+}
+.item-box:hover{
+    transform: translateY(-12px);
+}
 /* About CSS End */
+/* Funding  CSS Start */
+.funding-text span{
+    color: #e73c3e;
+    font-size: 16px;
+}
+.funding-text h1{
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.funding-text p {
+    width: 570px;
+    margin: auto;
+    color: #606060;
+    line-height: 1.8;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.apply h1 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #111111;
+    margin-bottom: 25px;
+}
+.timeline ul {
+    list-style: none;
+    position: relative;
+    padding: 0 55px;
+    margin: 0 25px;
+}
+.timeline ul::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    background: #e73c3e;
+    height: calc(100% - 64px);
+}
+.timeline ul li{
+    position: relative;
+    margin-bottom: 25px;
+}
+.timeline ul li::before {
+    content: attr(data-counter);
+    position: absolute;
+    top: 0;
+    left: -75px;
+    height: 40px;
+    width: 40px;
+    background: #f9fafb;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #e73c3e;
+    color: #e73c3e;
+}
+.timeline ul li strong {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 500;
+    color: #111111;
+}
+.timeline ul li p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #606060;
+    line-height: 1.8;
+}
+/* Funding  CSS End */
