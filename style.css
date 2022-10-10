@@ -467,4 +467,47 @@ a.default-btn:hover::after{
     color: #606060;
     line-height: 1.8;
 }
-/* Funding  CSS End */
+/* Funding CSS End */
+/* calculate CSS Start */
+.calculate{
+    background: #fdebeb;
+    padding: 50px 45px;
+}
+.cal-text{}
+.cal-text p {
+    font-size: 16px;
+    color: #606060;
+}
+.cal-text h2 {
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 36px;
+    margin-top: 10px;
+    color: #111111;
+    margin-bottom: 35px;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+label{
+    color: #606060;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.form-group input{
+    border: none;
+    background: #fff;
+    height: 50PX;
+   
+}
+select{
+    height: 50px;
+    border: none !important;
+
+}
+option{
+    color: #606060 !important;
+}
+
+/* calculate CSS End */
