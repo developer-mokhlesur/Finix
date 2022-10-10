@@ -511,3 +511,94 @@ option{
 }
 
 /* calculate CSS End */
+/* solution CSS Start */
+.solution-item {
+    background: #e73c3e;
+    border-radius: 5px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.item-left{
+    position: relative;
+}
+.item-left::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -36px;
+    width: 1px;
+    height: 95px;
+    background: #f39e9f;
+}
+.item-left h3 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.2;
+    margin: 0;
+}
+.item-right {
+    height: 95px;
+    display: flex;
+    align-items: center;
+}
+.item-right span {
+    display: inline-block;
+    margin: 75px;
+    font-size: 30px;
+    color: red;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    background: #fff;
+    border-radius: 50%;
+}
+.item-right span i{
+     transform: rotate(325deg);
+}
+.item-right a.call-1{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+
+}
+/* solution CSS End */
+/* Company CSS Start */
+.company{}
+.company-content{}
+.company-content h3 {
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 500;
+    color: #111111;
+}
+.company-text {
+    margin-bottom: 20px;
+}
+.icon {
+    margin-right: 25px;
+    font-size: 50px;
+    color: #e73c3e;
+}
+.co-text{}
+.co-text h4{
+    font-size: 25px;
+    font-weight: 500;
+    color: #111111;
+    margin-bottom: 10px;
+}
+.co-text p{
+    color: #606060;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+.com-img img {
+    transform: translate(0, 80px);
+}
+/* Company CSS End */
