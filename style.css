@@ -183,6 +183,9 @@ a.default-btn:hover::after{
     color: #111111;
     margin-right: 11px;
 }
+.slider-social ul li a:hover{
+    color: #e73c3e;
+}
 /* Slider CSS End */
 /* Slider-2 CSS Start */
 .slider-2 {
@@ -565,12 +568,9 @@ option{
     font-weight: 500;
     color: #fff;
     text-decoration: none;
-
 }
 /* solution CSS End */
 /* Company CSS Start */
-.company{}
-.company-content{}
 .company-content h3 {
     margin-bottom: 50px;
     font-size: 36px;
@@ -585,7 +585,6 @@ option{
     font-size: 50px;
     color: #e73c3e;
 }
-.co-text{}
 .co-text h4{
     font-size: 25px;
     font-weight: 500;
@@ -602,3 +601,460 @@ option{
     transform: translate(0, 80px);
 }
 /* Company CSS End */
+.service{
+    background: #f9fafb;
+}
+.service-tab ul {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.service-tab li {
+    flex: 1 1 auto;
+}
+
+.service-tab button {
+    border: none;
+    background: transparent;
+}
+
+.service-tab span {
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 9%);
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #606060;
+    font-size: 34px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.service-tab li button.active span {
+    color: #e73c3e;
+}
+
+.service-tab li button.active {
+    position: relative;
+}
+
+.service-tab li button.active::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #e73c3e;
+}
+
+.service-tab strong {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.tab-content {
+    margin-top: 40px;
+}
+.service-tab-contant h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    color: #111;
+}
+.service-tab-contant p {
+    font-size: 16px;
+    color: #606060;
+    line-height: 1.8;
+    font-weight: 400;
+}
+.service-tab-contant ul {
+    padding-left: 0px;
+    margin: 20px 0px;
+}
+.service-tab-contant ul li {
+    font-family: "Rubik", sans-serif;
+    padding-left: 18px;
+    color: #606060;
+    margin-bottom: 10px;
+    font-weight: 400;
+    position: relative;
+    list-style: none;
+}
+.service-tab-contant ul li::before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background: #e83b3e;
+    border-radius: 50%;
+    top: 7px;
+    left: 0;
+}
+/* service section  end */
+/* section fixed btn  */
+
+.fixed-btn {
+    text-align: center;
+    padding: 50px;
+}
+
+.fixed-btn a {
+    position: fixed;
+    top: 50%;
+    right: 10%;
+    z-index: 99;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: #82b440;
+    padding: 13px 22px;
+    border-radius: 30px;
+    animation-name: tada;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    display: inline-block;
+    transition: .5s;
+}
+
+.fixed-btn a:hover {
+    background: red;
+    color: #fff !important;
+}
+
+@keyframes tada {
+    0% {
+        transform: scale(1.3);
+    }
+    20% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-15deg);
+    }
+    60% {
+        transform: rotate(15deg);
+    }
+    80% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* Testimonial CSS Start */
+.test-contant p {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #111;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+}
+
+.clint-datails {}
+
+.clint-datails h5 {
+    color: #e73c3e;
+    font-size: 17px;
+}
+
+.clint-datails p {
+    color: #606060;
+}
+
+.test-image {
+    position: relative;
+}
+
+.div-quare {
+    position: absolute;
+    bottom: 125px;
+    left: 97px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.div-quare::after {
+    content: "\f10e";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: 'Fontawesome';
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    line-height: 80px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    color: #e83b3e;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 9%);
+    font-size: 38px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.div-quare:hover::after {
+    background: #e83b3e;
+    color: #fff;
+}
+/* Testimonial CSS  End */
+/* Team CSS  Start */
+.team-section {
+    background: #fafbfc;
+}
+.team-member {
+    position: relative;
+}
+.team-menu ul {
+    padding-left: 0;
+    position: absolute;
+    bottom: 121px;
+    left: 46px;
+}
+.team-menu ul li {
+    list-style: none;
+}
+.team-menu ul li a {
+    display: block;
+    width: 33px;
+    height: 33px;
+    background: #fff;
+    line-height: 33px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #111;
+    font-size: 16px;
+    transition: .5s;
+    transform: translateY(35px);
+    opacity: 0;
+    visibility: hidden;
+}
+.team-menu ul li a:hover {
+    background: #e73c3e;
+    color: #fff;
+}
+
+.team-member:hover ul li a {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.team-menu ul li:nth-child(1) a {
+    transition: .2s !important;
+}
+
+.team-menu ul li:nth-child(2) a {
+    transition: .4s !important;
+}
+
+.team-menu ul li:nth-child(3) a {
+    transition: .7s !important;
+}
+
+.team-menu ul li:nth-child(4) a {
+    transition: .9s !important;
+}
+.team-member h3 {
+    font-size: 24px;
+    color: #e73c3e;
+    margin-top: 40px;
+}
+.team-member p {
+    font-size: 16px;
+    color: #606060;
+}
+/* Team CSS  End */
+/* Portfolio CSS  End */
+.port-image p {
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    color: #e73c3e;
+    margin-top: 18px;
+}
+
+.port-content {}
+
+.port-content h3 {}
+
+.port-content h3 a {
+    font-size: 25px;
+    line-height: 1.4;
+    color: #111;
+    margin-bottom: 18px;
+    display: block;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.port-content h3 a:hover {
+    color: #e73c3e;
+}
+.port-content h6 a {
+    font-size: 16px;
+    color: #111;
+    display: block;
+    font-weight: 500;
+    transition: .5s;
+    text-decoration: none !important;
+}
+.port-btn:hover h6 a {
+    letter-spacing: 1.2px;
+    color: #e73c3e;
+
+}
+/* Portfolio CSS  End */
+/* Footer CSS  End */
+.footer-menu-section {
+    background: #000;
+    border-bottom: 1px solid #333535;
+}
+.footer-logo a img {
+    color: #fff;
+}
+
+.footer-menu-wrap p {
+    color: #fff;
+    padding: 28px 0px;
+}
+.footer-social-menu ul {
+    text-align: start;
+    padding-left: 0px;
+}
+.footer-social-menu ul li {
+    list-style: none;
+}
+.footer-social-menu ul li:first-child {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+.footer-social-menu ul li a {
+    padding: 0px 10px;
+    color: #fff;
+    font-size: 17px;
+    transition: .5s;
+    margin-top: 3px;
+    display: block;
+}
+.footer-social-menu ul li a:hover {
+    color: #e73c3e;
+}
+.quick-link h4 {
+    font-size: 20px;
+    border-bottom: 1px solid #333535;
+    padding-bottom: 20px;
+    color: #fff;
+}
+.quick-link ul {
+    padding-left: 0px;
+}
+.quick-link ul li {
+    list-style: none;
+    margin-bottom: 18px;
+}
+.quick-link ul li a {
+    color: #fff;
+    transition: .5s;
+    text-decoration: none;
+}
+.quick-link ul li a:hover {
+    color: #e73c3e;
+    letter-spacing: 1.2px;
+}
+.footer-locatain {
+    position: relative;
+}
+.footer-locatain p {
+    color: #fff;
+    margin-top: 20px;
+    padding-left: 35px;
+}
+.footer-locatain::after {
+    position: absolute;
+    content: "\f3c5";
+    top: 3px;
+    left: -4px;
+    font-family: 'Fontawesome';
+    font-weight: 600;
+    color: #fff;
+    font-size: 25px;
+}
+.footer-email {
+    margin-top: 20px;
+    position: relative;
+}
+.footer-email::after {
+    position: absolute;
+    content: "\f0e0";
+    top: 3px;
+    left: -4px;
+    font-family: 'Fontawesome';
+    font-weight: 600;
+    color: #fff;
+    font-size: 25px;
+}
+.footer-email span {
+    color: #fff;
+    padding-left: 35px;
+    display: block;
+    transition: .5s;
+}
+.footer-email span:hover {
+    color: #e73c3e;
+}
+.footer-contact {
+    margin-top: 20px;
+    position: relative;
+}
+.footer-contact::after {
+    position: absolute;
+    content: "\f2a0";
+    top: 3px;
+    left: -4px;
+    font-family: 'Fontawesome';
+    font-weight: 600;
+    color: #fff;
+    font-size: 25px;
+    transform: rotate(-30deg);
+}
+.footer-contact span {
+    color: #fff;
+    padding-left: 35px;
+    display: block;
+    transition: .5s;
+}
+.footer-contact span:hover {
+    color: #e73c3e;
+}
+footer {
+    background: #000;
+}
+
+footer p {
+    color: rgba(158, 142, 142, 0.685);
+}
+
+footer p a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #e73c3e;
+}
+/* Footer CSS  End */
